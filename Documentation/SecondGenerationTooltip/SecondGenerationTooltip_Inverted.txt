@@ -1,0 +1,97 @@
+# Build sequence for the second-generation tooltip, in inverted mode.
+#
+# Reaction count: 90
+
+## First Layer
+##
+## Reaction count: 49
+
+[15] Place Methyls
+          |          | repeat 5 times
+ -3.99 eV | -5.93 eV |   HAbst (Ge-CC) from Si3(SiH)
+ -3.69 eV | -4.01 eV |   CH2 (NC3Ge) to Si3(Si)
+ -4.11 eV | -5.07 eV |   HDon (NC3Ge) to CH2
+
+[4] Place Initial Silicon
+ -3.99 eV | -5.93 eV | HAbst (Ge-CC) from Si3(SiH)
+ -2.07 eV | -2.54 eV | SiH3 (NS3Sn) to Si3(Si)
+ -5.07 eV | -5.93 eV | HAbst (Ge-CC) from CH3
+ -4.47 eV | -5.93 eV | HAbst (Ge-CC) from SiH3
+
+[6] Form Central Cage
+ -5.07 eV | -5.93 eV | HAbst (Ge-CC) from CH3
+      n/a | -5.93 eV | HAbst (Ge-CC) from Si-(SiH2)-C
+          |          |   forms Si-C bond
+          |          |   forms C2Si(Si) functional group
+ -4.40 eV | -5.93 eV | HAbst (Ge-CC) from C2Si(SiH)
+ -3.69 eV | -4.28 eV | CH2 (NC3Ge) to C2Si(Si)
+          |          |   two-stroke trajectory
+          |          |   forms H2(C=Si)C2 pi bond
+ -0.00 eV |      n/a | Rearr. (Ge-CH3)
+          |          |   four-stroke trajectory
+          |          |   forms C3(Si) radical
+ -4.11 eV | -4.72 eV | HDon (NC3Ge) to C3(Si)
+
+[24] Place Silyls
+          |          | repeat 6 times
+ -4.82 eV | -5.93 eV |   HAbst (Ge-CC) from Si3(CH)/Si2(CH2)
+ -2.55 eV | -3.10 eV |   SiH3 (NS3Ge) to Si3(CH)/SiH2(C)
+ -5.07 eV | -5.93 eV |   HAbst (Ge-CC) from Si2(CH2)/Si(CH3)
+          |          |     approach from side opposite to the last SiH3
+      n/a | -4.78 eV |   HAbst (NC3Si) from SiH3
+          |          |     forms Si-C bond
+          |          |     forms six-membered ring
+
+## Second Layer
+##
+## Reaction count: 41
+
+[12] Place Methyls
+          |          | repeat 4 times
+ -4.72 eV | -5.93 eV |   HAbst (Ge-CC) from C3(SiH)
+ -3.69 eV | -4.38 eV |   CH2 (NC3Ge) to C3(Si)
+ -4.11 eV | -5.47 eV |   HDon (NC3Ge) to CH2
+
+[4] Place Initial Silicon
+ -4.72 eV | -5.93 eV | HAbst (Ge-CC) from C3(SiH)
+ -2.55 eV | -3.07 eV | SiH3 (NS3Ge) to HC2(Si)
+ -5.47 eV | -5.93 eV | HAbst (Ge-CC) from CH3
+ -4.58 eV | -5.93 eV | HAbst (Ge-CC) from SiH3
+
+[6] Form Strong Silicon Apex
+ -5.47 eV | -5.93 eV | HAbst (Ge-CC) from CH3
+ -4.82 eV | -5.93 eV | HAbst (Ge-CC) from Si-(SiH2)-C
+          |          |   forms Si-C bond
+          |          |   forms C2Si(Si) functional group
+ -4.40 eV | -5.93 eV | HAbst (Ge-CC) from C2Si(SiH)
+ -3.69 eV | -4.28 eV | CH2 (NC3Ge) to C2Si(Si)
+          |          |   two-stroke trajectory
+          |          |   forms H2(C=Si)C2 pi bond
+ -0.00 eV |      n/a | Rearr. (Ge-CH3)
+          |          |   four-stroke trajectory
+          |          |   forms C3(Si) radical
+ -4.11 eV | -4.72 eV | HDon (NC3Ge) to C3(Si)
+
+[6] Form Germanium Apex
+ -4.88 eV | -5.93 eV | HAbst (Ge-CC) from HSi2(CH)
+ -2.36 eV | -3.21 eV | GeH3 (NS3Ge) to HSi2(C)
+          |          | repeat 2 times
+ -5.47 eV | -5.93 eV |   HAbst (Ge-CC) from CH3
+      n/a | -4.11 eV |   HAbst (NC3Ge) from GeH3
+          |          |     forms Ge-C bond
+          |          |     forms six-membered ring
+
+[13] Form Weak Silicon Apex
+          |          | repeat 2 times
+ -4.72 eV | -5.93 eV |   HAbst (Ge-CC) from C3(SiH)
+ -2.55 eV | -3.07 eV |   SiH3 (NS3Ge) to HC2(Si)
+ -4.61 eV | -5.93 eV | HAbst (Ge-CC) from Si3(CH)
+ -2.55 eV | -3.06 eV | SiH3 (NS3Ge) to Si3(C)
+ -4.75 eV | -5.93 eV | HAbst (Ge-CC) from Si3C-(SiH3)
+          |          | repeat 2 times
+ -3.18 eV | -4.78 eV |   HAbst (C3Si) from Si3C-(SiH2)/Si3C-(SiH)-Si
+ -4.58 eV | -5.93 eV |   HAbst (Ge-CC) from Si-(SiH3)
+ -0.00 eV |      n/a |   Rearr. (Ge-CH3)
+          |          |     forms Si-Si bond
+          |          |     forms six-membered ring
+          |          |     promotes Si diradical to monoradical

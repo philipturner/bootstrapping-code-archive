@@ -1,0 +1,60 @@
+# State changes required to put feedstocks on the tooltip.
+
+## Strong Silicon Radical (Donation)
+
+[1] C3Si -> C3Si-SiH3
+ -2.34 eV | -3.10 eV | SiH3 (NC3Sn) to Si
+
+[1] C3Si -> C3Si-Cl
+ -4.13 eV | -4.70 eV | Cl (Si3Si) to Si
+
+## Strong Silicon Radical (Abstraction)
+
+[1] C3Si-H -> C3Si
+ -4.72 eV | -6.26 eV | HAbst (C-CC) from Si
+
+## Germanium Radical (Donation)
+
+[1] C3Ge -> C3Ge-H
+ -3.29 eV | -4.01 eV | HDon (NC3Sn) to Ge
+
+[1] C3Ge -> C3Ge-CH2
+ -2.61 eV | -3.71 eV | CH2 (NC3Sn) to Ge
+
+[2] C3Ge -> C3Ge-CH3
+ -2.61 eV | -3.71 eV | CH2 (NC3Sn) to Ge
+ -4.11 eV | -5.48 eV | HDon (NC3Ge) to CH2
+
+[1] C3Ge -> C3Ge-CC
+ -1.66 eV | -2.48 eV | CC (NC3Sn) to Ge
+
+[2] C3Ge -> C3Ge-SiH2
+ -2.34 eV | -2.96 eV | SiH3 (NC3Sn) to Ge
+ -4.60 eV | -6.26 eV | HAbst (C-CC) from SiH3
+
+[1] C3Ge -> C3Ge-SiH3
+ -2.34 eV | -2.96 eV | SiH3 (NC3Sn) to Ge
+
+## Germanium Radical (Abstraction)
+
+[2] C3Ge-CH3 -> C3Ge
+ -5.58 eV | -6.26 eV | HAbst (C-CC) from CH3
+ -3.71 eV |      n/a | CH2Abst (C-CH2) from Ge
+
+[1] C3Ge-CCH -> C3Ge
+      n/a |      n/a | CCHAbst (C-CH2) from Ge
+          |          |   off-center trajectory
+          |          |   forms C3C-(CH2)-CCH complex
+
+## Weak Silicon Radical (Donation)
+
+[1] CSi2Si -> CSi2Si-SiH3
+ -2.07 eV | -2.58 eV | SiH3 (NS3Sn) to Si
+ 
+ [1] CSi2Si -> CSi2Si-GeH3
+ -1.89 eV | -2.74 eV | GeH3 (NS3Sn) to Si
+
+## Weak Silicon Radical (Abstraction)
+
+[1] CSi2Si-H -> CSi2Si
+ -4.17 eV | -6.26 eV | HAbst (C-CC) from Si
